@@ -35,7 +35,7 @@ def create_dataloader_v1(text, batch_size=4, max_length=256, stride=128, shuffle
 
     return dataloader
 
-with open ("the-verdict.txt", "r") as file:
+with open ("./the-verdict.txt", "r") as file:
     raw_text = file.read()
 
 dataloader = create_dataloader_v1(raw_text, batch_size=8, max_length=4, stride=4, shuffle=False)
